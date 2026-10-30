@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoody Focus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>⚡ SPOODY FOCUS</h2>
+        <span>YOUR PRODUCTIVITY SPACE</span>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <p class="tag">WELCOME BACK</p>
+            <h1>Stay focused, <span>My Guy!</span></h1>
+            <p>Small steps. Big achievements.</p>
+        </section>
+
+        <section class="stats">
+
+            <div class="card">
+                <p>TASKS COMPLETED</p>
+                <h2 id="completed">0</h2>
+            </div>
+
+            <div class="card">
+                <p>TOTAL TASKS</p>
+                <h2 id="total">0</h2>
+            </div>
+
+            <div class="card">
+                <p>DAILY PROGRESS</p>
+                <h2 id="progress">0%</h2>
+            </div>
+
+        </section>
+
+        <section class="workspace">
+
+            <div class="card tasks">
+                <h2>My Tasks</h2>
+                <p class="muted">Make today count.</p>
+
+                <div class="task-input">
+                    <input
+                        id="taskInput"
+                        type="text"
+                        placeholder="Enter a new task..."
+                    >
+                    <button id="addTask">ADD</button>
+                </div>
+
+                <ul id="taskList"></ul>
+            </div>
+
+            <div class="card timer">
+                <h2>Focus Timer</h2>
+                <p class="muted">Time to concentrate.</p>
+
+                <div id="timer">60:00</div>
+
+                <div class="timer-buttons duration-buttons">
+                    <button class="duration" data-minutes="30">30 MIN</button>
+                    <button class="duration active" data-minutes="60">1 HR</button>
+                    <button class="duration" data-minutes="90">90 MIN</button>
+                    <button class="duration" data-minutes="120">120 MIN</button>
+                </div>
+
+                <div class="timer-buttons">
+                    <button id="startTimer">START</button>
+                    <button id="resetTimer">RESET</button>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>MADE WITH ⚡ BY SPOODY</footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
